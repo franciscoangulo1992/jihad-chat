@@ -117,8 +117,13 @@
               "devServerTarget": "jihad-chat:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "jihad-chat"
 }

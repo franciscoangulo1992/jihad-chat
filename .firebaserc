@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "jihad-ed48b": {
+      "hosting": {
+        "jihad-chat": [
+          "jihad-ed48b"
+        ]
+      }
+    }
+  }
+}
