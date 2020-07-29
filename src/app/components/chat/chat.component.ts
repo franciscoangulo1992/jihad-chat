@@ -9,9 +9,9 @@ import { ChatService } from '../../services/chat.service';
 export class ChatComponent implements OnInit {
   mensaje = '';
   elemento: any;
-  constructor(private _cs: ChatService) {
+  constructor(public cs: ChatService) {
 
-    this._cs.cargarMensajes().subscribe(() => {
+    this.cs.cargarMensajes().subscribe(() => {
       setTimeout(() => {
         this.elemento.scrollTop = this.elemento.scrollHeight;
       }, 20);
@@ -27,7 +27,7 @@ export class ChatComponent implements OnInit {
     if (this.mensaje.length === 0) {
       return;
     }
-    this._cs.agregarMensaje(this.mensaje).then(() => console.log('envio correcto'))
+    this.cs.agregarMensaje(this.mensaje).then(() => console.log('envio correcto'))
       .catch((error) => console.error('error al enviar', error));
     this.mensaje = "";
   }
