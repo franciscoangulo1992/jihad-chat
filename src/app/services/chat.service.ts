@@ -13,6 +13,7 @@ export class ChatService {
   // items: Observable<any[]>;
   public usuario: any = {};
   public chats: Mensaje[] = [];
+  // tslint:disable-next-line: no-shadowed-variable
   constructor(private afs: AngularFirestore, public auth: AngularFireAuth) {
 
 
@@ -34,7 +35,7 @@ export class ChatService {
       .pipe(map((mensajes: Mensaje[]) => {
         this.chats = [];
 
-        for (let mensaje of mensajes) {
+        for (const mensaje of mensajes) {
           this.chats.unshift(mensaje);
         }
         return this.chats;
@@ -42,7 +43,7 @@ export class ChatService {
   }
 
   agregarMensaje(texto: string) {
-    let mensaje: Mensaje = {
+    const mensaje: Mensaje = {
       nombre: this.usuario.nombre,
       mensaje: texto,
       fecha: new Date().getTime(),

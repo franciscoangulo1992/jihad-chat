@@ -21,6 +21,7 @@ export class ChatComponent implements OnInit {
   ngOnInit(): void {
     this.elemento = document.getElementById('app-mensajes');
   }
+  // tslint:disable-next-line: typedef
   enviar_mensaje() {
 
     console.log(this.mensaje);
