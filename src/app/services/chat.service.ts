@@ -11,7 +11,7 @@ import { auth } from 'firebase/app';
 export class ChatService {
   private itemsCollection: AngularFirestoreCollection<Mensaje>;
   // items: Observable<any[]>;
-  public usuario: any = {}
+  public usuario: any = {};
   public chats: Mensaje[] = [];
   constructor(private afs: AngularFirestore, public auth: AngularFireAuth) {
 
@@ -25,7 +25,7 @@ export class ChatService {
       this.usuario.uid = user.uid;
 
 
-    })
+    });
   }
 
   cargarMensajes() {
@@ -46,7 +46,7 @@ export class ChatService {
       nombre: 'Demo',
       mensaje: texto,
       fecha: new Date().getTime(),
-    }
+    };
     return this.itemsCollection.add(mensaje);
   }
 
@@ -54,6 +54,8 @@ export class ChatService {
     this.auth.signInWithPopup(new auth.GoogleAuthProvider());
   }
   logout() {
+    this.usuario = {};
     this.auth.signOut();
+    console.log('Sesión Cerrada !');
   }
 }

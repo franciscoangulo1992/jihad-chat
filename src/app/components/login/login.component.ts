@@ -9,9 +9,7 @@ import { ChatService } from '../../services/chat.service';
 export class LoginComponent {
 
   constructor(public cs: ChatService) { }
-  ingresar(proveedor: string) {
-    console.log(proveedor);
-
+  ingresar() {
     this.cs.login();
   }
 
