@@ -27,9 +27,9 @@ export class ChatComponent implements OnInit {
     if (this.mensaje.length === 0) {
       return;
     }
-    this._cs.agregarMensaje(this.mensaje).then(
-      () => this.mensaje = "")
+    this._cs.agregarMensaje(this.mensaje).then(() => console.log('envio correcto'))
       .catch((error) => console.error('error al enviar', error));
+    this.mensaje = "";
   }
 
 }
