@@ -1,5 +1,5 @@
 <div class="container main-container">
-  <h1 *ngIf="cs.usuario.uid">
+  <h1 *ngIf="!cs.usuario.uid">
     para entregarte un servicio mas personalizado, inicia sesión
   </h1>
   <div class="col-md-12 text-right" *ngIf="cs.usuario.uid">
