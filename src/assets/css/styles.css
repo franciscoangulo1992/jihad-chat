@@ -1,11 +1,11 @@
 @font-face{
     font-family: "roboto1";
-    src: url("fonts/Roboto-Regular.ttf");
+    src: url("../fonts/Roboto-Regular.ttf");
 }
 
 @font-face{
     font-family: "roboto2";
-    src: url("fonts/Roboto-Bold.ttf");
+    src: url("../fonts/Roboto-Bold.ttf");
 }
 
 /*Generales*/
@@ -16,6 +16,7 @@
 }
 
 body{
+  color: white;
     font-family: "roboto1", Arial, Helvetica;
     font-size: 20px;
     background: url("../img/jihad2.jpg");
@@ -24,7 +25,7 @@ body{
 
 /*Contenedor principal*/
 
-#content{
+.content{
     min-height: 700px;
     width: 80%;
     margin:0px auto;
@@ -32,7 +33,7 @@ body{
     background: rgba(17, 13, 13, 0.7);
 }
 
-#title{
+.title{
     width: 70%;
     margin-top: 10px;
     margin: 0px auto;
@@ -41,14 +42,14 @@ body{
     color: white;
 }
 
-#title h1{
+.title h1{
     font-family: "roboto2";
     font-size: 60px;
     border-bottom: 1px solid white;
     padding-bottom: 5px;
 }
 
-#container-nav{
+.container-nav{
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
@@ -56,7 +57,7 @@ body{
     height: 300px;
 }
 
-#about-jihad, #chat-jihad{
+.about-jihad, .chat-jihad{
     width: 250px;
     height: 100px;
     padding: 20px;
@@ -67,28 +68,28 @@ body{
     transition: .6s;
 }
 
-#chat-jihad:hover{
+.chat-jihad:hover{
     border-top: 3px solid blue;
     border-left: 3px solid blue;
     transform: scale(1.3);
-    
+
 }
 
-#about-jihad, #chat-jihad a {
+.about-jihad, #chat-jihad a {
     color: white !important;
 }
 
-#about-jihad{
+.about-jihad{
     margin-top: 31px;
     margin-left: 43px;
 }
 
-#about-jihad a{
+.about-jihad a{
     color: white;
 }
 
 
-#chat-jihad{
+.chat-jihad{
     margin-right: 60px;
     width: 281px;
     height: 103px;

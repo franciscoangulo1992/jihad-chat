@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ChatService } from '../../services/chat.service';
 
 @Component({
   selector: 'app-chatbot',
   templateUrl: './chatbot.component.html',
   styleUrls: ['./chatbot.component.css']
 })
-export class ChatbotComponent implements OnInit {
+export class ChatbotComponent {
 
-  constructor() { }
+  constructor(public cs: ChatService) { }
 
-  ngOnInit(): void {
+
+  cerrarSesion() {
+    this.cs.logout();
+
   }
 
 }

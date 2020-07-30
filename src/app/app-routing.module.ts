@@ -1,4 +1,3 @@
-// import {ModuleWithProviders} from '@angular/core';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
@@ -7,10 +6,12 @@ import { ChatbotComponent } from './components/chatbot/chatbot.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  {path: 'sobre-jihad', component: AboutComponent},
-  {path: 'chat-bot', component: ChatbotComponent},
-  {path: '**', component: HomeComponent}
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'about-jihad', component: AboutComponent },
+  { path: 'chat-bot', component: ChatbotComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '**', component: HomeComponent }
+
 ];
 
 @NgModule({
