@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ChatService } from '../../services/chat.service';
+import { ConfigService } from '../../services/config.service';
+
 
 @Component({
   selector: 'app-login',
@@ -7,10 +9,8 @@ import { ChatService } from '../../services/chat.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
   constructor(public cs: ChatService) { }
   ingresar() {
     this.cs.login();
   }
-
 }

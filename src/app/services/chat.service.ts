@@ -5,15 +5,17 @@ import { map } from 'rxjs/operators';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { auth } from 'firebase/app';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class ChatService {
   private itemsCollection: AngularFirestoreCollection<Mensaje>;
-  // items: Observable<any[]>;
+
   public usuario: any = {};
   public chats: Mensaje[] = [];
   constructor(private afs: AngularFirestore, public auth: AngularFireAuth) {
+
 
 
     this.auth.authState.subscribe(user => {
@@ -34,19 +36,20 @@ export class ChatService {
       .pipe(map((mensajes: Mensaje[]) => {
         this.chats = [];
 
-        for (let mensaje of mensajes) {
+        for (const mensaje of mensajes) {
           this.chats.unshift(mensaje);
         }
         return this.chats;
       }));
   }
 
-  agregarMensaje(texto: string) {
-    let mensaje: Mensaje = {
-      nombre: this.usuario.nombre,
+  agregarMensaje(texto: string, nombre?: string, uid?: string) {
+    const mensaje: Mensaje = {
+      nombre: nombre ? "Jihad" : this.usuario.nombre,
       mensaje: texto,
       fecha: new Date().getTime(),
-      uid: this.usuario.uid
+      uid: uid ? uid : this.usuario.uid
+
     };
     return this.itemsCollection.add(mensaje);
   }
