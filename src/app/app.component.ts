@@ -1,4 +1,3 @@
-import { ChatService } from './services/chat.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,15 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(public cs: ChatService) {
-
-  }
-
-  cerrarSesion() {
-    this.cs.logout();
-
-    
-
+  constructor() {
 
   }
 }

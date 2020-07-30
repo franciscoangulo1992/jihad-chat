@@ -23,7 +23,7 @@ import { ChatbotComponent } from './components/chatbot/chatbot.component';
     LoginComponent,
     HomeComponent,
     AboutComponent,
-    ChatbotComponent
+    ChatbotComponent,
   ],
   imports: [FormsModule,
     BrowserModule,
