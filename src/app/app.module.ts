@@ -10,6 +10,9 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { ChatComponent } from './components/chat/chat.component';
 import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { ChatbotComponent } from './components/chatbot/chatbot.component';
 
 
 
@@ -17,7 +20,10 @@ import { LoginComponent } from './components/login/login.component';
   declarations: [
     AppComponent,
     ChatComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    AboutComponent,
+    ChatbotComponent
   ],
   imports: [FormsModule,
     BrowserModule,
