@@ -1,27 +1,20 @@
-<section id="content">
+<section class="content">
+  <div class="title">
+    <h1>Jihad</h1>
+  </div>
 
-    <div id="title">
-        <h1>Jihad</h1>
+  <div class="container-nav">
+
+    <div class="container-nav"> <a class="about-jihad" routerLink="/about-jihad" routerLinkActive="active">Sobre
+        Jihad</a>
+    </div>
+    <div class="chat-jihad">
+      <a [routerLink]="['/chat-bot']">Chat jihad</a>
     </div>
 
-    <div id="container-nav">
-
-        <div id="about-jihad">
-            <a [routerLink]="['/sobre-jihad']">Sobre Jihad</a>
-        </div>
-    
-        <div id="chat-jihad">
-            <a [routerLink]="['/chat-bot']">Chat jihad</a>
-        </div>
-
-    </div>
-    
-    
-    
+  </div>
 </section>
 
 <footer>
-    Desarrollado por blumix &copy;
+  Desarrollado por blumix &copy;
 </footer>
-
-<router-outlet></router-outlet>
