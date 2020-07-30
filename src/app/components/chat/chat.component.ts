@@ -60,23 +60,30 @@ export class ChatComponent implements OnInit {
     this.mensaje = "";
   }
 
-  enviar_mensaje_jihad(mensajeJihad: string = "") {
+  enviar_mensaje_jihad(msgInitial: string = "") {
     return this.watsonService.enviarMensaje(this.urlenviarMensaje, {
-      mensaje: mensajeJihad,
+      mensaje: msgInitial,
       session_id: this.SesionWatson.session_id
     }).subscribe((res: any) => {
       this.respuestaJihab = res;
       if (this.inicioWatson === false) {
-        this.cs.agregarMensaje(this.respuestaJihab.output.generic[0].text, "Jihad", "Jihad")
-          // .then(() => console.log('se ha iniciado '))
-          .catch((error) => console.error('error al enviar', error));
-        this.cs.agregarMensaje(this.respuestaJihab.output.generic[1].text, "Jihad", "Jihad")
-          // .then(() => console.log('Watson correctament'))
-          .catch((error) => console.error('error al enviar', error));
+
+        const iteration = this.respuestaJihab.output.generic;
+
+        // tslint:disable-next-line: forin
+        for (const i in iteration) {
+          this.cs.agregarMensaje(this.respuestaJihab.output.generic[i].text, "Jihad", "Jihad")
+            .catch((error) => console.error('error al enviar', error));
+        }
         return this.inicioWatson = true;
       } else {
-        this.cs.agregarMensaje(this.respuestaJihab.output.generic[0].text, "Jihad", "Jihad").then(() => console.log('recepcion de jihad'))
-          .catch((error) => console.error('error al enviar', error));
+        const iteration = this.respuestaJihab.output.generic;
+        console.log(iteration);
+        // tslint:disable-next-line: forin
+        for (const i in iteration) {
+          this.cs.agregarMensaje(this.respuestaJihab.output.generic[i].text, "Jihad", "Jihad")
+            .catch((error) => console.error('error al enviar', error));
+        }
       }
     });
   }
