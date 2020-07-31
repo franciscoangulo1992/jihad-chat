@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
 import { OptionsComponent } from './components/options/options.component';
+import { AnimoComponent } from './components/animo/animo.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { OptionsComponent } from './components/options/options.component';
     FooterComponent,
     MainComponent,
     OptionsComponent,
+    AnimoComponent,
   ],
   imports: [FormsModule,
     BrowserModule,
