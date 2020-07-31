@@ -1,55 +1,31 @@
-.main-container{
-  margin-top: 40px;
-  margin-bottom: 150px;
+*{
+  margin: 0;
+  padding: 0;
+
 }
 
-.puntero{
-  cursor: pointer;
+body{
+background-image: url(assets/img/fondo.jpg);
+background-size: cover;
+background-repeat: no-repeat;
 }
 
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
 
-.chat-window{
-  padding: 10px;
-  width: 300px;
-  height: 400px;
-  overflow: hidden;
-  border: 1px solid #4080FF;
-  border-radius: 20px;
-}
+ }
 
-.app-mensajes{
-  overflow-y:scroll;
-  height:270px;
-  /*background:gray;*/
-  padding: 5px;
-}
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 
+ }
 
-/* Animaciones */
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 
-.fast {
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
+ }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 
-  to {
-    opacity: 1;
-  }
-}
-
-.fadeIn {
-  animation-name: fadeIn;
-}
+ }

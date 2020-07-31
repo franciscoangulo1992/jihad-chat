@@ -1,0 +1,16 @@
+.footer{
+  padding-top: 15px;
+  background-color: black;
+  opacity: 0.9;
+  width: 100%;
+  height: 10%;
+  color: #ffffff;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: cornflowerblue;
+}
