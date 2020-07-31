@@ -1,5 +1,5 @@
 nav{
-  margin: 15px;
+  margin: 15px 0;
   padding-top: 10px;
   color: white;
   text-align: center;
@@ -11,6 +11,7 @@ nav{
 nav:hover{
   opacity: 0.5;
   color: #ffffff;
+  cursor: pointer;
 }
 a{
   color: white !important;
