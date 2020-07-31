@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
 import { OptionsComponent } from './components/options/options.component';
 import { AnimoComponent } from './components/animo/animo.component';
+import { MisionComponent } from './components/mision/mision.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AnimoComponent } from './components/animo/animo.component';
     MainComponent,
     OptionsComponent,
     AnimoComponent,
+    MisionComponent,
   ],
   imports: [FormsModule,
     BrowserModule,

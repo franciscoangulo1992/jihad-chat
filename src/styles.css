@@ -7,6 +7,9 @@
 body{
 background-image: url(assets/img/fondo.jpg);
 background-size: cover;
-max-width: 100%;
 background-repeat: no-repeat;
+}
+
+.titulo{
+  color: #1967D2;
 }
