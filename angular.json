@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "jihad-chat"
+  "defaultProject": "jihad-chat",
+  "cli": {
+    "analytics": false
+  }
 }
