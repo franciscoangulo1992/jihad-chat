@@ -3,9 +3,11 @@
   padding: 0;
 
 }
+
 body{
-  background-image: url(assets/img/fondo.jpg);
+background-image: url(assets/img/fondo.jpg);
 background-size: cover;
+background-repeat: no-repeat;
 }
 
  /* Small devices (landscape phones, 576px and up) */
