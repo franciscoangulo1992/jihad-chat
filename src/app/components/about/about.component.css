@@ -1,0 +1,17 @@
+.card{
+    margin-top: 20%;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.imaganes_about{
+    max-width: 100%;
+    max-height: 100%;
+    width: 80%;
+    height: 80%;
+    opacity: 0.9;
+}
+.footer-bottom{
+  padding-top: 50px;
+}
+

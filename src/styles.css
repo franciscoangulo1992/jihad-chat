@@ -1,55 +1,36 @@
-.main-container{
-  margin-top: 40px;
-  margin-bottom: 150px;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+
 }
 
-.puntero{
-  cursor: pointer;
+body{
+background-image: url(assets/img/fondo.jpg);
+background-size: cover;
+background-repeat: no-repeat;
 }
 
-
-.chat-window{
-  padding: 10px;
-  width: 300px;
-  height: 400px;
-  overflow: hidden;
-  border: 1px solid #4080FF;
-  border-radius: 20px;
+.titulo{
+  color: #1967D2;
 }
 
-.app-mensajes{
-  overflow-y:scroll;
-  height:270px;
-  /*background:gray;*/
-  padding: 5px;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
 }
 
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
 
-/* Animaciones */
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
+ }
 
-.fast {
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+ }
 
-  to {
-    opacity: 1;
-  }
-}
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
 
-.fadeIn {
-  animation-name: fadeIn;
-}

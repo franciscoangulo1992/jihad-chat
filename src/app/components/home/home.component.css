@@ -1,0 +1,25 @@
+nav{
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ffffff;
+  /* IMPORTANTE */
+  text-align: center;
+
+}
+nav:hover{
+  opacity: 1;
+  border: 1px solid #1967D2;
+  color: #ffffff;
+  cursor: pointer;
+}
+a{
+  color: white !important;
+  font-size: 20px;
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+}

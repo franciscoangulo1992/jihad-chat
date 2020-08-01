@@ -1,0 +1,12 @@
+.main{
+  margin-top: 100px;
+  opacity: 1;
+}
+a{
+  text-decoration: none;
+  font-size: 35px;
+  color: #1967D2;
+}
+a:hover{
+  color:blue ;
+}
